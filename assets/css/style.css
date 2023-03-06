@@ -1,0 +1,39 @@
+/*######################################
+                GENERAL
+######################################*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: lora;
+  src: url("./assets/fonts/Lora/Lora-VariableFont_wght.ttf");
+}
+@font-face {
+  font-family: work;
+  src: url("/assets/fonts/Work_Sans/WorkSans-VariableFont_wght.ttf");
+}
+/* var */
+body {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+/*######################################
+                HEADER
+######################################*/
+header {
+  background-color: #000;
+  height: 100vh;
+}
+
+/*######################################
+                MAIN
+######################################*/
+/*######################################
+                FOOTER
+######################################*/
+
+/*# sourceMappingURL=style.css.map */
