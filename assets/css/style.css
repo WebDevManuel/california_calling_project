@@ -8,14 +8,24 @@
 }
 
 @font-face {
-  font-family: lora;
-  src: url("./assets/fonts/Lora/Lora-VariableFont_wght.ttf");
+  font-family: "lora";
+  src: url("/assets/fonts/Lora/Lora-VariableFont_wght.ttf");
 }
 @font-face {
-  font-family: work;
+  font-family: "work";
   src: url("/assets/fonts/Work_Sans/WorkSans-VariableFont_wght.ttf");
 }
-/* var */
+h1 {
+  font-family: "lora";
+  font-size: 5em;
+}
+
+p,
+a {
+  font-family: "work";
+  font-size: 1em;
+}
+
 body {
   max-width: 1280px;
   margin: 0 auto;
@@ -26,12 +36,95 @@ body {
 ######################################*/
 header {
   background-color: #000;
+  text-align: center;
   height: 100vh;
+  margin: 0 auto;
+}
+header img {
+  height: 25vh;
+  width: 0;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+header .header {
+  background-color: #000;
+  color: #fff;
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10vh 0;
+  margin: 0 auto;
+}
+header .header .header__hl {
+  line-height: 0.75em;
+  padding: 0.25em 0;
+}
+header .header .header__hl--outline {
+  color: #000;
+  -webkit-text-stroke: 1px #fff;
+}
+header .header__btn {
+  width: 92%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10vh 0;
+}
+header .header__btn img {
+  width: 4%;
+  height: auto;
+}
+header .header__btn .header__btn__rsvp {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 20px;
+  border: 1px solid #fff;
 }
 
 /*######################################
                 MAIN
 ######################################*/
+.textscreen {
+  height: 75vh;
+  background-color: #000;
+  margin: 0 auto;
+}
+.textscreen .textscreen__item {
+  width: 92%;
+  margin: 0 auto;
+  padding: 0 19% 0 0;
+  color: #fff;
+  font-family: "lora";
+  font-size: 4.9em;
+}
+
+.data {
+  background-color: #000;
+}
+.data .data__width {
+  width: 92%;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+.data .data__item {
+  color: #fff;
+}
+.data .data__item__label {
+  font-size: 1em;
+}
+.data .data__item__digits {
+  font-size: 4em;
+  font-family: "lora";
+  padding: 0 0 15vh;
+}
+.data .data__item__map {
+  width: 55%;
+  margin: -18vh -4% 0 0;
+}
+
 /*######################################
                 FOOTER
 ######################################*/

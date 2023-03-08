@@ -1,7 +1,6 @@
 /*######################################
                 GENERAL
 ######################################*/
-
 * {
     margin: 0;
     padding: 0;
@@ -9,43 +8,151 @@
 }
 
 @font-face {
-    font-family: lora;
-    src: url("./assets/fonts/Lora/Lora-VariableFont_wght.ttf");
-}
-@font-face {
-    font-family: work;
-    src: url("/assets/fonts/Work_Sans/WorkSans-VariableFont_wght.ttf");
+    font-family: 'lora';
+    src: url('/assets/fonts/Lora/Lora-VariableFont_wght.ttf');
 }
 
-/* var */
-    $hl-font: lora;
-    $main-font: work;
-    $main-font-color--light: #fff;
-    $main-font-color--dark: #000;
-    $background-color--light: #fff;
-    $background-color--dark: #000;
+@font-face {
+    font-family: 'work';
+    src: url('/assets/fonts/Work_Sans/WorkSans-VariableFont_wght.ttf');
+}
+
+// variables
+$hl-font: 'lora';
+$hl-font-size: 5em;
+$main-font: 'work';
+$main-font--size: 1em;
+
+$main-font-color--light: #fff;
+$main-font-color--dark: #000;
+$background-color--light: #fff;
+$background-color--dark: #000;
+// contentwidth
+$cw: 92%;
+
+h1 {
+    font-family: $hl-font;
+    font-size: $hl-font-size;
+}
+
+p,
+a {
+    font-family: $main-font;
+    font-size: $main-font--size;
+}
 
 body {
     max-width: 1280px;
     margin: 0 auto;
-} 
+}
 
 /*######################################
                 HEADER
 ######################################*/
 
-header{
-    background-color:$background-color--dark;
+header {
+    background-color: $background-color--dark;
+    text-align: center;
     height: 100vh;
+    margin: 0 auto;
+
+    img {
+        height: 25vh;
+        width: 0;
+        border: 1px solid rgba(255, 255, 255, 0.2);
+    }
+
+    .header {
+        background-color: $background-color--dark;
+        color: $main-font-color--light;
+        // height: 100vh;
+        width: 60%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 10vh 0;
+        margin: 0 auto;
+        // background-color: red;
+
+        .header__hl {
+            line-height: .75em;
+            padding: .25em 0;
+        }
+
+        .header__hl--outline {
+            color: #000;
+            -webkit-text-stroke: 1px $main-font-color--light;
+        }
+    }
+
+    .header__btn {
+        width: $cw;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10vh 0;
+
+        img {
+            width: 4%;
+            height: auto;
+        }
+
+        .header__btn__rsvp {
+            color: $main-font-color--light;
+            text-decoration: none;
+            padding: 10px 20px;
+            border: 1px solid $main-font-color--light;
+        }
+    }
 }
-
-
 
 /*######################################
                 MAIN
 ######################################*/
+.textscreen {
+    height: 75vh;
+    background-color: $background-color--dark;
+    margin: 0 auto;
 
+    .textscreen__item {
+        width: $cw;
+        margin: 0 auto;
+        padding: 0 19% 0 0;
+        color: $main-font-color--light;
+        font-family: $hl-font;
+        font-size: 4.9em;
+    }
+}
 
+.data {
+    background-color: $background-color--dark;
+
+    .data__width {
+        width: $cw;
+        display: flex;
+        justify-content: space-between;
+        margin: 0 auto;
+    }
+
+    .data__item {
+        color: $main-font-color--light;
+    }
+    .data__item__label{
+        font-size: 1em;
+    }
+    .data__item__digits{
+        font-size: 4em;
+        font-family: 'lora';
+        padding: 0 0 15vh;
+    }
+    .data__item__map{
+        width: 55%;
+        margin: -18vh -4% 0 0;
+        // z-index: -1;
+    }
+}
 
 
 /*######################################
